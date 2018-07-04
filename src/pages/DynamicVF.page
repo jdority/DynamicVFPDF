@@ -1,0 +1,5 @@
+<apex:page controller="DynamicObjectController" sidebar="false" renderAs="PDF">
+
+    <apex:detail subject="{!$CurrentPage.parameters.id}" relatedList="true" />
+
+</apex:page>
