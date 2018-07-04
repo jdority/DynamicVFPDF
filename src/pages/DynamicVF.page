@@ -1,5 +1,6 @@
-<apex:page controller="DynamicObjectController" sidebar="false" renderAs="PDF">
-
+<apex:page sidebar="false" renderAs="PDF">
+    <!--remove renderAs to bring up classic detail page with built in print option
+        renderAs PDF doesn't look as nice, but less clicks -->
     <apex:detail subject="{!$CurrentPage.parameters.id}" relatedList="true" />
 
 </apex:page>
